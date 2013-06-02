@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+  <title>Pusher Test</title>
+  channel.bind('pusher:subscription_succeeded', function() {
+    var triggered = channel.trigger('client-someeventname', { your: data });
+  });
+  var triggered = channel.trigger(eventName, data);
+  channel.bind('my_event', function(data) {
+    alert(data);
+  });
+</head>
